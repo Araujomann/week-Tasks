@@ -1,0 +1,125 @@
+body{
+    all: unset;
+    box-sizing: border-box;
+    background-image: url(https://cdn.wallpapersafari.com/93/15/6OwEcZ.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    transition: all 0.5s ease-in-out;
+}
+
+header{
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
+    filter: drop-shadow(0 0 1em rgba(0,0,0,0.5));
+}
+
+header h1{
+    font-size: 1.8em;
+    font-family: 'Courier', Courier, monospace;
+    font-weight: 900;
+}
+
+header p{
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+form{
+    margin: 0 auto;
+    background-color: rgba(19, 103, 171, 0.5);
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 1em rgba(0,0,0,0.5);
+    max-width: 500px;
+    transition: all 0.5s ease-in-out;
+}
+
+form fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+form fieldset caption{
+    font-size: 1.2em;
+}
+
+form fieldset label{
+    font-size: 1em;
+    margin: .5em 0;
+}
+
+form fieldset input{
+    font-size: 1em;
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+form fieldset input[type=number]{
+    font-size: 1em;
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    background-color: white;
+    color: black;
+    -moz-appearance: textfield;
+    transition: all 0.5s ease-in-out;
+}
+
+form fieldset input:focus{
+    outline: 2px solid #2ecc71;
+}
+
+form fieldset select{
+    font-size: 1em;
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+form fieldset textarea{
+    font-size: 1em;
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    resize: none;
+}
+
+form fieldset textarea:focus{
+    outline: 2px solid #2ecc71;
+}
+
+form input[type=submit]{
+    color: white;
+    background-color: #57cc99;
+    border: none;
+    border-radius: .5em;
+    padding: 1em;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+form input[type=submit]:hover{
+    
+    background-color: #2ecc71;
+    cursor: pointer;
+}

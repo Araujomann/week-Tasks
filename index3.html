@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width scale=initial-scale, 1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Título da Página</h1>
+      <p id="description"><em>Uma breve descrição sobre o assunto da página</em></p>
+    </header>
+    
+
+    
+    <form id="survey-form">
+      <fieldset class="basic-info">
+        <label id="name-label">Nome<input required type="text" id="name" placeholder="Digite seu nome"></label>
+        <label id="email-label">Email<input required type="email" id="email" placeholder="Digite seu email"></label>
+        <label id="number-label">Idade<input type="number" id="number" min="13" max="130" placeholder="Digite sua idade"></label>
+      </fieldset>
+
+        <fieldset>
+          <caption> O que você faz?</caption>
+          <select id="dropdown">
+            <option>Selecione uma opção</option>
+            <option>Primeira</option>
+            <option>Segunda</option>
+            <option>Terceira</option>
+          </select>
+        </fieldset>
+
+      <fieldset>
+        <caption> Você recomendaria este site para alguém?</caption>
+        <label><input type="radio" name="option" class="inline" value="1"> Com certeza</label>
+        <label><input type="radio" name="option" class="inline" value="2"> Sim</label>
+        <label><input type="radio" name="option" class="inline" value="3"> Talvez</label>
+        <label><input type="radio" name="option" class="inline" value="4"> Acho que não</label>
+        <label><input type="radio" name="option" class="inline" value="5"> Definitivamente não</label>
+      </fieldset>
+
+      <fieldset>
+        <caption> Que melhorias você gostaria de ver neste site?</caption>
+        <label><input type="checkbox" value="1" class="inline"> Videos</label>
+        <label><input type="checkbox" value="2" class="inline"> Desafios</label>
+        <label><input type="checkbox" value="3" class="inline"> Projetos front-end</label>
+        <label><input type="checkbox" value="4" class="inline"> Projetos back-end</label>
+        <label><input type="checkbox" value="5" class="inline"> Outro</label>
+      </fieldset>
+
+
+        <fieldset>
+          <caption> Algum comentário ou sugestão?</caption>
+          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit">
+        
+    </form>
+    <script>
+      $("input[type=submit]").on("click", function(){
+        alert("Os seus dados foram enviados!");
+      })
+    </script>
+  </body>
+</html>
