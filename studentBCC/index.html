@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro aluno BCC</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="titleForm">
+        <header>
+            <h1>Formulário</h1>
+        </header>
+    </div>
+    <div>
+        <form id="studentForm">
+            <label for="firstName" required>Nome:</label>
+            <input type="text" id="firstName" placeholder="Insira seu nome">
+
+            <label for="lastName" required>Sobrenome:</label>
+            <input type="text" id="lastName" placeholder="Insira seu sobrenome">
+
+            <label for="fieldOfStudy" required>Área de estudo:</label>
+            <input type="text" id="fieldOfStudy" placeholder="Insira sua área de estudo">
+
+            
+            <label for="birthYear" required>Ano de nascimento:</label>
+            <input type="number" id="birthYear" placeholder="Insira sua data de nascimento">
+
+            <label for="studentId" required>Nº de matrícula:</label>
+            <input type="number" id="studentId" placeholder="Insira sua matrícula">
+
+            <button type="submit" onclick="enviarForm()">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

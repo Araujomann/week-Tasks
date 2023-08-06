@@ -1,0 +1,85 @@
+
+html {
+    font-size: 18px;
+}
+
+body{
+    all: unset;
+    box-sizing: border-box;
+    background-size: cover;
+    background-color: #081c15;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    transition: all 0.5s ease-in-out;
+   
+    
+}
+
+form, header{
+    color: white;
+    text-align: center;
+}
+
+.titleForm {
+    min-width: 500px;
+}
+
+form {
+    margin: 0 auto;
+    background-color: rgba(64, 145, 108, .4);
+    color: white;
+    border-radius: .5em;
+    padding: .9rem 0 .3rem 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+form label{
+    font-size: 1em;
+    margin: 0 1.2em;
+}
+
+header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    line-height: 2em;
+    filter: drop-shadow( 0 0 2em rgba(0, 0, 0, 1));
+}
+
+label {
+    margin: .5em 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin: .7rem 0 0 5rem; 
+}
+
+input {
+    display:block;
+    margin: .3em auto 1.3em;
+    font-size: .74em;
+    padding: 0.5em 11em;
+    border: none;
+    background-color: white;
+    color: black;
+    min-width: none;
+}
+
+input::placeholder {
+    text-align: center;
+    vertical-align: middle;
+}
+
+ form button {
+    background-color: #b7e4c7;
+    padding: .5rem;
+    border-radius: .4em;
+    min-width: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9rem;
+    margin: .6rem 1.2em .5rem 1.2em;
+}
